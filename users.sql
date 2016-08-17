@@ -1,0 +1,22 @@
+CREATE TABLE `providers` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `oauth_provider` varchar(255) COLLATE utf8_unicode_ci,
+    `oauth_uid` varchar(255) COLLATE utf8_unicode_ci,
+    `fname` varchar(255) COLLATE utf8_unicode_ci,
+    `lname` varchar(255) COLLATE utf8_unicode_ci,
+    `username` varchar(255) COLLATE utf8_unicode_ci,
+    `email` varchar(255) COLLATE utf8_unicode_ci,
+    `gender` varchar(10) COLLATE utf8_unicode_ci,
+    `locale` varchar(10) COLLATE utf8_unicode_ci,
+    `gpluslink` varchar(255) COLLATE utf8_unicode_ci,
+    `location` varchar(255) COLLATE utf8_unicode_ci,
+    `picture` text  COLLATE utf8_unicode_ci,
+    `country` varchar(50) COLLATE utf8_unicode_ci,	
+ 	`picture_url` varchar(255) COLLATE utf8_unicode_ci,
+ 	`profile_url` varchar(255) COLLATE utf8_unicode_ci,
+    `oauth_token` text COLLATE utf8_unicode_ci,
+    `oauth_secret` text COLLATE utf8_unicode_ci,
+    `created` datetime,
+    `modified` datetime,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
